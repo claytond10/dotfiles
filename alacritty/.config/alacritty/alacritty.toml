@@ -1,0 +1,58 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+dimensions = { columns = 80, lines = 40 }
+opacity = 0.8
+blur = true
+
+[terminal]
+shell = { program = "/bin/zsh", args = ["-l"] }
+
+[font]
+normal = { family = "JetBrains Mono Nerd Font", style = "regular" }
+bold = { family = "JetBrains Mono Nerd Font", style = "bold" }
+italic = { family = "JetBrains Mono Nerd Font", style = "italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 11.0
+
+[general]
+live_config_reload = true
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "#282a36"
+cursor = "#f8f8f2"
+
+[colors.selection]
+text = "#f8f8f2"
+background = "#44475a"
+
+[colors.normal]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+
+[colors.bright]
+black = "#6272a4"
+red = "#ff6e6e"
+green = "#69ff94"
+yellow = "#ffffa5"
+blue = "#d6acff"
+magenta = "#ff92df"
+cyan = "#a4ffff"
+white = "#ffffff"
+
+
+

@@ -1,0 +1,47 @@
+# ~/.aliases
+
+# Navigation
+alias ~='cd ~'
+alias c='clear'
+
+
+# Git shortcuts
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --all'
+alias gd='git diff'
+alias gck='git checkout'
+
+# Package management (Arch)
+alias update='yay -Syu && flatpak update'
+
+# Networking
+alias myip='curl ifconfig.me && echo'
+
+# Python
+alias py='python3'
+alias pip='pip3'
+
+# Docker
+alias d='docker'
+alias dps='docker ps'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+
+# Reload shell config
+alias reload='source ~/.zshrc'
+
+# Custom prompt for checking which aliases are loaded
+alias aliases='cat ~/.aliases'
+
+# Other
+alias vi='vim'
+alias df='duf -only local'
+alias ff='fastfetch'
+
+# Use eza instead of ls
+alias ls='eza -l --icons --color=always --group-directories-first'
+alias ll='eza -la --icons --color=always --group-directories-first'
+alias la='eza -a --icons --color=always --group-directories-first'
