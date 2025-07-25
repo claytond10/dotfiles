@@ -1,0 +1,80 @@
+source ~/.vim/autoload/plug.vim
+
+" Load plugins
+call plug#begin()
+
+" Dracula theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+call plug#end()
+
+" Set encoding
+set encoding=utf-8
+
+" Enable absolute line numbers only
+set number
+set norelativenumber
+
+" Highlight current line
+set cursorline
+
+" Enable syntax highlighting
+syntax on
+
+" Use Dracula colorscheme
+" Ensure the theme is installed (see instructions below)
+colorscheme dracula
+
+" Tabs and indentation
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Enable mouse support
+set mouse=a
+
+" Clipboard support
+set clipboard=unnamedplus
+
+" Searching
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Disable swap and backup files
+set noswapfile
+set nobackup
+set nowritebackup
+
+" Persistent undo
+set undofile
+set undodir=~/.config/vim/undodir
+
+" Show matching parentheses
+set showmatch
+
+" Command-line completion
+set wildmenu
+
+" Enable filetype plugins
+filetype plugin indent on
+
+" Scroll offset
+set scrolloff=8
+
+" Split behavior
+set splitright
+set splitbelow
+
+" Redraw performance
+set lazyredraw
+
+" Status line
+set laststatus=2
+
+" Plugin section with vim-plug
+call plug#begin('~/.config/vim/plugged')
+Plug 'dracula/vim', { 'as': 'dracula' }
+" Add more plugins here if n
